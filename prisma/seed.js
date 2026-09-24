@@ -6,18 +6,18 @@ async function main() {
   await prisma.restaurant.createMany({
     data: [
       {
-        name: "Pizzaria Napoli",
-        category: "Pizza",
+        name: "Padaria Sonho de mal",
+        category: "Padaria",
         rating: 4.5
       },
       {
-        name: "Burger House",
-        category: "Burger",
+        name: "Tortas da vovó",
+        category: "Tortas",
         rating: 4.2
       },
       {
-        name: "Sushi Express",
-        category: "Japonesa",
+        name: "Bolos de nuvem",
+        category: "JBolos",
         rating: 4.8
       }
     ]
