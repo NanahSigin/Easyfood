@@ -112,25 +112,25 @@ JWT_SECRET="sua-chave-secreta"
 6. Criar as tabelas do banco
 npx prisma migrate dev
 
-7. Iniciar o projeto
+7. Popular o banco de dados
+node prisma/seed.js
+
+8. Iniciar o projeto
 node server.js
-O servidor será iniciado em:
-http://localhost:3000
 
-Acessar o frontend
-Depois de iniciar o servidor, abra no navegador:
-http://localhost:3000
+9. Acessar o frontend
+Abra o arquivo:
+frontend/index.html
 
-Autenticação
+10. Utilizar o sistema
 
-O sistema possui:
-POST /auth/register
-POST /auth/login
-GET  /auth/me
-O cadastro de restaurantes necessita de autenticação:
-GET  /restaurants
-POST /restaurants
+- Criar uma conta
+- Fazer login
+- Visualizar os restaurantes
+- Cadastrar restaurantes quando estiver autenticado
 
 Documentação
+
 As decisões de arquitetura estão disponíveis em:
+
 docs/adr/
