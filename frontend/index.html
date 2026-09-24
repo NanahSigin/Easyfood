@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyFood ♡</title>
+
+ //fonted
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Parisienne&display=swap"
+        rel="stylesheet"
+    >
+ //caminho do css//
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+//cabeçalho
+
+    <header>
+        <a href="#inicio" class="logo">
+            <span>♡</span>
+            EasyFood
+        </a>
+        <nav>
+            <a href="#inicio">Início </a>
+            <a href="#restaurants"> Restaurantes </a>
+            <a href="#login" id="login-link"> Entrar</a>
+            <a href="#register" id="register-link">Criar conta</a>
+        </nav>
+    </header>
+
+//conteudo
+    <main>
+
+//inicio
+
+        <section class="hero" id="inicio">
+            <div class="hero-decoration decoration-one">♡</div>
+            <div class="hero-decoration decoration-two">✦</div>
+            <div class="hero-text">
+                <span class="welcome-tag">🍓 Bem-vindo ao EasyFood</span>
+                <h1>Encontre seu próximo
+                    <span>restaurante favorito</span>
+                </h1>
+                <p>Descubra restaurantes, categorias e sabores para deixar seu dia ainda mais gostoso.</p>
+                <a
+                    href="#restaurants"
+                    class="hero-button"
+                >
+                    Ver restaurantes
+                    <span>
+                        ♡
+                    </span>
+                </a>
+            </div>
+            
+            --bolin--
+
+            <div class="cake-decoration">
+                <div class="cake-sparkle sparkle-left">
+                    ✦
+                </div>
+                <div class="cake-sparkle sparkle-right">
+                    ✧
+                </div>
+                <div class="cake-heart">
+                    ♡
+                </div>
+                <div class="cake-circle">
+                    <span class="cake-emoji">
+                        🍰
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        --restaurantes fofos--
+
+        <section
+            class="restaurants"
+            id="restaurants"
+        >
+            <div class="section-title">
+                <span>
+                    ♡ nossos favoritos ♡
+                </span>
+                <h2>
+                    Restaurantes
+                </h2>
+                <p>
+                    Escolha um lugar especial para sua próxima refeição.
+                </p>
+            </div>
+            <div id="restaurant-list">
+                <p class="loading">
+                    Carregando restaurantes...
+                </p>
+            </div>
+        </section>
+
+        --log--
+
+        <section
+            class="auth-section"
+            id="login"
+        >
+            <div class="auth-card">
+                <div class="auth-icon">
+                    ♡
+                </div>
+                <span class="card-subtitle">
+                    que bom ter você aqui
+                </span>
+                <h2>Entrar</h2>
+                <p>Acesse sua conta do EasyFood.</p>
+
+
+                <form id="login-form">
+
+
+                    <label for="login-email">
+                        E-mail
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+
+
+                    <label for="login-password">
+                        Senha
+                    </label>
+
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Sua senha"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Entrar ♡
+                    </button>
+
+                </form>
+
+
+                <p id="login-message"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CRIAR CONTA
+        ========================== -->
+
+        <section
+            class="auth-section"
+            id="register"
+        >
+
+            <div class="auth-card">
+
+
+                <div class="auth-icon">
+                    ♡
+                </div>
+
+
+                <span class="card-subtitle">
+                    faça parte do EasyFood
+                </span>
+
+
+                <h2>
+                    Criar conta
+                </h2>
+
+
+                <p>
+                    Crie sua conta e descubra novos sabores.
+                </p>
+
+
+                <form id="register-form">
+
+
+                    <label for="register-name">
+                        Nome
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="register-name"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+
+                    <label for="register-email">
+                        E-mail
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+
+
+                    <label for="register-password">
+                        Senha
+                    </label>
+
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="Crie uma senha"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Criar minha conta ♡
+                    </button>
+
+                </form>
+
+
+                <p id="register-message"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             USUÁRIO LOGADO
+        ========================== -->
+
+        <section
+            class="user-section hidden"
+            id="user-section"
+        >
+
+            <div class="user-card">
+
+
+                <div class="user-icon">
+                    ♡
+                </div>
+
+
+                <div>
+
+                    <span class="small-title">
+                        você está conectada ♡
+                    </span>
+
+
+                    <h2 id="user-name">
+                        Usuário
+                    </h2>
+
+
+                    <p id="user-email">
+                        email@email.com
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="logout-button"
+                    class="logout-button"
+                >
+                    Sair da conta
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CADASTRAR RESTAURANTE
+        ========================== -->
+
+        <section
+            class="restaurant-register hidden"
+            id="restaurant-register"
+        >
+
+            <div class="restaurant-form-card">
+
+
+                <div class="restaurant-form-icon">
+                    🍰
+                </div>
+
+
+                <span class="card-subtitle">
+                    compartilhe um lugar especial
+                </span>
+
+
+                <h2>
+                    Cadastrar restaurante
+                </h2>
+
+
+                <p>
+                    Adicione um novo restaurante ao EasyFood.
+                </p>
+
+
+                <form id="restaurant-form">
+
+
+                    <label for="restaurant-name">
+                        Nome do restaurante
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="restaurant-name"
+                        placeholder="Ex: Pizzaria da Ana"
+                        required
+                    >
+
+
+                    <label for="restaurant-category">
+                        Categoria
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="restaurant-category"
+                        placeholder="Ex: Pizza"
+                        required
+                    >
+
+
+                    <label for="restaurant-rating">
+                        Classificação
+                    </label>
+
+
+                    <input
+                        type="number"
+                        id="restaurant-rating"
+                        placeholder="Ex: 4.5"
+                        min="0"
+                        max="5"
+                        step="0.1"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Cadastrar ♡
+                    </button>
+
+                </form>
+
+
+                <p id="restaurant-message"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ♡ EasyFood ♡
+        </div>
+
+
+        <p>
+            Feito com carinho para encontrar novos sabores.
+        </p>
+
+
+        <span>
+            © 2026 EasyFood
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1187 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "DM Sans", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #fff0f5 0%,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 60%,
+            #fde7ef 0%,
+            transparent 25%
+        ),
+
+        #fff9fb;
+
+    color: #694955;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+
+    width: 100%;
+
+    padding: 20px 8%;
+
+    background: rgba(
+        255,
+        239,
+        245,
+        0.95
+    );
+
+    border-bottom:
+        1px solid #f5d3df;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.logo {
+
+    color: #b85c7a;
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    font-size: 36px;
+
+    font-weight: normal;
+}
+
+
+.logo span {
+
+    font-family:
+        "Lovers Quarrel",
+        sans-serif;
+
+    font-size: 22px;
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+
+nav a {
+
+    color: #805968;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #c76585;
+}
+
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 45px 20px;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 480px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #fbdce8
+        );
+
+    border:
+        1px solid #f4cfdb;
+
+    border-radius: 35px;
+
+    padding: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 90px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(190, 112, 140, 0.10);
+}
+
+
+.hero-text {
+
+    max-width: 650px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.welcome-tag {
+
+    display: inline-block;
+
+    color: #b65b79;
+
+    background-color: #fffafd;
+
+    border:
+        1px solid #f4cbd8;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+}
+
+
+.hero h1 {
+
+    font-family: "Parisienne", cursive;
+    color: #66434f;
+
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+    font-family: "Parisienne", cursive;
+
+    display: block;
+
+    color: #c76585;
+}
+
+
+.hero p {
+
+    color: #866b75;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: #d783a0;
+
+    color: white;
+
+    padding: 15px 27px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 20px
+        rgba(190, 93, 126, 0.20);
+
+    transition: 0.3s;
+}
+
+
+.hero-button:hover {
+
+    background-color: #c66c8d;
+
+    transform: translateY(-3px);
+}
+
+
+.hero-button span {
+
+    font-size: 18px;
+}
+
+
+
+/* =========================
+   DECORAÇÕES
+========================= */
+
+.hero-decoration {
+
+    position: absolute;
+
+    color: #e8a9bd;
+
+    opacity: 0.7;
+
+    z-index: 1;
+}
+
+
+.decoration-one {
+
+    top: 40px;
+
+    right: 45%;
+
+    font-size: 35px;
+}
+
+
+.decoration-two {
+
+    bottom: 40px;
+
+    right: 47%;
+
+    font-size: 25px;
+}
+
+
+
+/* =========================
+   BOLO EMOJI
+========================= */
+
+.cake-decoration {
+
+    width: 330px;
+
+    height: 330px;
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.cake-circle {
+
+    width: 240px;
+
+    height: 240px;
+
+    background: #fffafb;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid #f8dce5;
+
+    box-shadow:
+        0 15px 35px
+        rgba(190, 105, 135, 0.13);
+}
+
+
+.cake-emoji {
+
+    font-size: 125px;
+
+    line-height: 1;
+
+    filter:
+        drop-shadow(
+            0 8px 8px
+            rgba(170, 80, 110, 0.12)
+        );
+
+    transform: rotate(-3deg);
+}
+
+
+
+/* =========================
+   BRILHOS DO BOLO
+========================= */
+
+.cake-sparkle {
+
+    position: absolute;
+
+    color: #d7799a;
+
+    font-size: 28px;
+
+    z-index: 10;
+}
+
+
+.sparkle-left {
+
+    top: 45px;
+
+    left: 10px;
+}
+
+
+.sparkle-right {
+
+    top: 125px;
+
+    right: 5px;
+
+    font-size: 23px;
+}
+
+
+.cake-heart {
+
+    position: absolute;
+
+    bottom: 40px;
+
+    left: 25px;
+
+    color: #db7f9f;
+
+    font-size: 27px;
+
+    z-index: 10;
+}
+
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-title span {
+
+    color: #c76585;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+.section-title h2 {
+
+    color: #684551;
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    font-size: 58px;
+
+    font-weight: normal;
+
+    margin: 5px 0;
+}
+
+
+.section-title p {
+
+    color: #92747f;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================
+   RESTAURANTES
+========================= */
+
+.restaurants {
+
+    margin-bottom: 90px;
+}
+
+
+#restaurant-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.restaurant-card {
+
+    position: relative;
+
+    background-color: #fff;
+
+    padding: 30px 25px;
+
+    border-radius: 25px;
+
+    border:
+        1px solid #f2d5df;
+
+    box-shadow:
+        0 10px 25px
+        rgba(190, 105, 135, 0.08);
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+
+.restaurant-card::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 15px;
+
+    color: #f1bfd0;
+
+    font-size: 22px;
+}
+
+
+.restaurant-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(190, 105, 135, 0.14);
+}
+
+
+.restaurant-card h3 {
+
+    color: #754b5a;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.restaurant-card p {
+
+    color: #8c707a;
+
+    font-size: 14px;
+
+    margin-top: 8px;
+}
+
+
+.restaurant-card .rating {
+
+    color: #c76585;
+
+    font-size: 19px;
+
+    letter-spacing: 2px;
+
+    margin-top: 15px;
+}
+
+
+.loading {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #947580;
+}
+
+
+
+/* =========================
+   LOGIN E CADASTRO
+========================= */
+
+.auth-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 80px;
+}
+
+
+.auth-card {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background-color:
+        rgba(255, 255, 255, 0.95);
+
+    padding: 42px;
+
+    border-radius: 30px;
+
+    border:
+        1px solid #f1d3de;
+
+    box-shadow:
+        0 15px 35px
+        rgba(190, 105, 135, 0.10);
+
+    text-align: center;
+}
+
+
+.auth-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background-color: #fbe2eb;
+
+    color: #c76585;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+
+.card-subtitle {
+
+    color: #c76585;
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    font-size: 25px;
+}
+
+
+.auth-card h2 {
+
+    color: #684551;
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    font-size: 52px;
+
+    font-weight: normal;
+
+    margin-bottom: 4px;
+}
+
+
+.auth-card > p {
+
+    color: #92747f;
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+}
+
+
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+}
+
+
+form label {
+
+    color: #754b5a;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+form input {
+
+    padding: 14px 16px;
+
+    border:
+        1px solid #ebcbd7;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    background-color: #fffafd;
+
+    color: #684551;
+}
+
+
+form input::placeholder {
+
+    color: #c3a7b1;
+}
+
+
+form input:focus {
+
+    border-color: #dc8faa;
+
+    box-shadow:
+        0 0 0 4px #fceaf0;
+}
+
+
+form button {
+
+    border: none;
+
+    background-color: #d783a0;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 20px;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+form button:hover {
+
+    background-color: #c66c8d;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================
+   MENSAGENS
+========================= */
+
+#login-message,
+#register-message,
+#restaurant-message {
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    min-height: 20px;
+}
+
+
+
+/* =========================
+   USUÁRIO LOGADO
+========================= */
+
+.user-section {
+
+    margin-bottom: 60px;
+}
+
+
+.user-card {
+
+    background-color: #fce4ec;
+
+    border:
+        1px solid #f2cad7;
+
+    border-radius: 25px;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.user-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #c76585;
+
+    font-size: 25px;
+}
+
+
+.small-title {
+
+    color: #c76585;
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    font-size: 24px;
+}
+
+
+.user-card h2 {
+
+    color: #684551;
+
+    font-size: 21px;
+
+    margin-top: 2px;
+}
+
+
+.user-card p {
+
+    color: #8c707a;
+
+    font-size: 14px;
+
+    margin-top: 3px;
+}
+
+
+.logout-button {
+
+    margin-left: auto;
+
+    border:
+        1px solid #edc5d2;
+
+    background-color: white;
+
+    color: #b85c7a;
+
+    padding: 11px 20px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.logout-button:hover {
+
+    background-color: #f9dce6;
+}
+
+
+
+/* =========================
+   CADASTRO DE RESTAURANTE
+========================= */
+
+.restaurant-register {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 90px;
+}
+
+
+.restaurant-form-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    background-color: white;
+
+    padding: 42px;
+
+    border-radius: 30px;
+
+    border:
+        1px solid #f1d3de;
+
+    box-shadow:
+        0 15px 35px
+        rgba(190, 105, 135, 0.10);
+
+    text-align: center;
+}
+
+
+.restaurant-form-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background-color: #fbe2eb;
+
+    color: #c76585;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+
+.restaurant-form-card h2 {
+
+    color: #684551;
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    font-size: 45px;
+
+    font-weight: normal;
+
+    margin-bottom: 5px;
+}
+
+
+.restaurant-form-card > p {
+
+    color: #92747f;
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+}
+
+
+
+/* =========================
+   ESCONDER
+========================= */
+
+.hidden {
+
+    display: none !important;
+}
+
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    background-color: #f9dce6;
+
+    border-top:
+        1px solid #efc6d4;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #805968;
+}
+
+
+.footer-logo {
+
+    font-family:
+        "Parisienne",
+        cursive;
+
+    color: #b85c7a;
+
+    font-size: 38px;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+
+    color: #92747f;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+footer span {
+
+    color: #a48690;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 20px;
+    }
+
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .hero {
+
+        padding: 45px 25px;
+
+        text-align: center;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 45px;
+    }
+
+
+    .hero h1 span {
+
+        font-size: 50px;
+    }
+
+
+    .hero p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .cake-decoration {
+
+        transform: scale(0.85);
+    }
+
+
+    #restaurant-list {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .auth-card,
+    .restaurant-form-card {
+
+        padding: 32px 22px;
+    }
+
+
+    .user-card {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .logout-button {
+
+        margin-left: 0;
+    }
+
+}
